@@ -10,21 +10,16 @@ firefox_driver = webdriver.Firefox()
 chrome_driver.get("https://www.google.com/")
 firefox_driver.get("https://www.google.com/")
 
-## Launch tests with Chrome and Firefox drivers
-for driver in [chrome_driver, firefox_driver]:
-    driver.get("https://www.google.com/")
-    assert "Google" in driver.title
-
- # Find the search box and input the search query
+# Find the search box and input the search query
     #Chrome
-    search_box = chrome_driver.find_element(By.NAME, "q")
-    search_box.send_keys("selenium python")
-    search_box.send_keys(Keys.RETURN)
+search_box = chrome_driver.find_element(By.NAME, "q")
+search_box.send_keys("selenium python")
+search_box.send_keys(Keys.RETURN)
     
     #Firefox
-    search_box = firefox_driver.find_element(By.NAME, "q")
-    search_box.send_keys("selenium python")
-    search_box.send_keys(Keys.RETURN)
+search_box = firefox_driver.find_element(By.NAME, "q")
+search_box.send_keys("selenium python")
+search_box.send_keys(Keys.RETURN)
 
 # Close Chrome and Firefox drivers
 chrome_driver.quit()
