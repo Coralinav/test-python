@@ -21,7 +21,7 @@ pip install -r .\requirements.txt
 ```
 4. Now you can run the tests
 
-ex.
+example
 ```bash
 python find-broken-links.py
 ```
