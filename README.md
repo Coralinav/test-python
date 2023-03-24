@@ -1,5 +1,4 @@
 # test-python
-test-python
 
 These are tests for python.
 
